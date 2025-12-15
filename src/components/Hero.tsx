@@ -76,8 +76,7 @@ export function Hero() {
                                 L'Examen d'État n'a jamais été aussi simple
                             </h1>
                             <p className=" text-muted-foreground md:text-xl leading-relaxed">
-                                Préparez-vous efficacement avec des milliers de questions, des résumés de cours et un suivi personnalisé.
-                                Rejoignez des milliers d'élèves en RDC qui réussissent grâce à Edubooster.
+                                Transformez votre smartphone en outil de réussite. Bien plus qu'une banque de questions, EduBooster est votre école virtuelle de la rentrée jusqu'aux résultats. Profitez de cours conformes (PDF, vidéo, audio), des simulateurs d'examens et un suivi intelligent, d'un accès hors-ligne pour garantir votre réussite à l'Exétat.
                             </p>
                         </div>
                         <div className="flex flex-col gap-3 min-[400px]:flex-row">
