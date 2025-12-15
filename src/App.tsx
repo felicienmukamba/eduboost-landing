@@ -8,7 +8,7 @@ import { Footer } from "./components/Footer"
 import { PreorderSection } from "./components/PreorderSection"
 import { Pricing } from "./components/Pricing"
 import { FAQ } from "./components/FAQ"
-import { About } from "./components/About"
+// import { About } from "./components/About"
 import { Contact } from "./components/Contact"
 import { CookieConsent } from "./components/CookieConsent"
 
