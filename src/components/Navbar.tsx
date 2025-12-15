@@ -1,8 +1,10 @@
 import { useState } from "react"
-import { Menu, BookOpen } from "lucide-react"
+import { Menu } from "lucide-react"
 import { Button } from "./ui/button"
 import { ThemeToggle } from "./ui/theme-toggle"
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
+import { PreorderModal } from "./PreorderModal"
+import logo from "@/assets/logo.png"
 
 const navLinks = [
     { name: "Accueil", href: "#hero" },
@@ -20,8 +22,8 @@ export function Navbar() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <BookOpen className="h-6 w-6 text-primary" />
-                        <span className="text-xl font-bold tracking-tight">Edubooster</span>
+                        <img src={logo} alt="Edubooster Logo" className="h-8 w-auto md:h-10" />
+                        <span className="text-xl font-bold">Edubooster</span>
                     </div>
 
                     {/* Desktop Nav */}
@@ -36,7 +38,9 @@ export function Navbar() {
                             </a>
                         ))}
                         <ThemeToggle />
-                        <Button>Télécharger</Button>
+                        <PreorderModal>
+                            <Button>Télécharger</Button>
+                        </PreorderModal>
                     </div>
 
                     {/* Mobile Nav */}
@@ -52,8 +56,7 @@ export function Navbar() {
                             <SheetContent side="right">
                                 <div className="flex flex-col gap-6 pt-10">
                                     <div className="flex items-center gap-2">
-                                        <BookOpen className="h-6 w-6 text-primary" />
-                                        <span className="text-xl font-bold">Edubooster</span>
+                                        <img src={logo} alt="Edubooster Logo" className="h-8 w-auto" />
                                     </div>
                                     <div className="flex flex-col gap-4">
                                         {navLinks.map((link) => (
@@ -67,7 +70,9 @@ export function Navbar() {
                                             </a>
                                         ))}
                                     </div>
-                                    <Button className="w-full">Télécharger l'App</Button>
+                                    <PreorderModal>
+                                        <Button className="w-full">Télécharger l'App</Button>
+                                    </PreorderModal>
                                 </div>
                             </SheetContent>
                         </Sheet>

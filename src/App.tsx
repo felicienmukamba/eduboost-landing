@@ -6,6 +6,11 @@ import { Demo } from "./components/Demo"
 import { Testimonials } from "./components/Testimonials"
 import { Footer } from "./components/Footer"
 import { PreorderSection } from "./components/PreorderSection"
+import { Pricing } from "./components/Pricing"
+import { FAQ } from "./components/FAQ"
+import { About } from "./components/About"
+import { Contact } from "./components/Contact"
+import { CookieConsent } from "./components/CookieConsent"
 
 function App() {
   return (
@@ -13,13 +18,18 @@ function App() {
       <Navbar />
       <main className="flex-1">
         <Hero />
+        {/* <About /> */}
         <Partners />
         <Features />
         <Demo />
         <Testimonials />
+        <Pricing />
+        <Contact />
+        <FAQ />
         <PreorderSection />
       </main>
       <Footer />
+      <CookieConsent />
     </div>
   )
 }
