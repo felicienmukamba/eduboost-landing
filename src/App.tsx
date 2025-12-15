@@ -5,6 +5,7 @@ import { Features } from "./components/Features"
 import { Demo } from "./components/Demo"
 import { Testimonials } from "./components/Testimonials"
 import { Footer } from "./components/Footer"
+import { PreorderSection } from "./components/PreorderSection"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Features />
         <Demo />
         <Testimonials />
+        <PreorderSection />
       </main>
       <Footer />
     </div>
