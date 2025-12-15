@@ -62,7 +62,7 @@ export function Testimonials() {
                 </div>
                 <div className="grid gap-8 md:grid-cols-3">
                     {testimonials.map((t, i) => (
-                        <Card key={i} className="testimonial-card flex flex-col justify-between h-full hover:shadow-lg transition-shadow duration-300">
+                        <Card key={i} className="testimonial-card flex flex-col justify-between h-full hover:shadow-lg transition-shadow duration-300 backdrop-blur-md bg-card/50">
                             <CardContent className="pt-6">
                                 <div className="flex mb-4">
                                     {[...Array(5)].map((_, i) => (
