@@ -18,7 +18,7 @@ export function Contact() {
                         <h3 className="font-semibold mb-2">Email</h3>
                         <p className="text-sm text-muted-foreground mb-4">Pour toute assistance technique</p>
                         <a href="mailto:contact@edubooster.com" className="text-primary font-medium hover:underline">
-                            contact@edubooster.com
+                            contact@edubooster.org
                         </a>
                     </div>
 

@@ -1,6 +1,5 @@
 export function Partners() {
     const partners = [
-        { name: "Ministère de l'EPST", logo: "" },
         { name: "Les éleves du Collège Boboto", logo: "" },
         { name: "Les éleves du Lycée Bosembo", logo: "" },
         { name: "Les éleves du Complexe Scolaire Cardinal Malula", logo: "" },
