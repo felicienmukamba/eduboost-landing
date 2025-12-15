@@ -73,8 +73,7 @@ export function Hero() {
                     <div ref={textRef} className="flex flex-col justify-center space-y-8">
                         <div className="space-y-4">
                             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600 dark:to-blue-400">
-                                L'Examen d'État n'a jamais été aussi simple
-                            </h1>
+                                Vous n'êtes plus seul face à l'Examen d'État. EduBooster est votre école virtuelle : un allié fidèle qui vous offre les meilleures ressources pour avancer avec courage vers votre réussite                            </h1>
                             <p className=" text-muted-foreground md:text-xl leading-relaxed">
                                 Transformez votre smartphone en outil de réussite. Bien plus qu'une banque de questions, EduBooster est votre école virtuelle de la rentrée jusqu'aux résultats. Profitez de cours conformes (PDF, vidéo, audio), des simulateurs d'examens et un suivi intelligent, d'un accès hors-ligne pour garantir votre réussite à l'Exétat.
                             </p>
