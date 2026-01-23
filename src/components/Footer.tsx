@@ -1,6 +1,5 @@
 import { Facebook, Instagram, Twitter } from "lucide-react"
-import { PrivacyPolicy } from "./PrivacyPolicy"
-import { TermsOfService } from "./TermsOfService"
+import { Link } from "react-router-dom"
 import logo from "@/assets/logo.png"
 
 export function Footer() {
@@ -34,33 +33,30 @@ export function Footer() {
                     <div>
                         <h3 className="font-semibold mb-4">Produit</h3>
                         <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li><a href="#features" className="hover:text-primary">Fonctionnalités</a></li>
-                            <li><a href="#pricing" className="hover:text-primary">Tarifs</a></li>
-                            <li><a href="#testimonials" className="hover:text-primary">Témoignages</a></li>
-                            <li><a href="#faq" className="hover:text-primary">FAQ</a></li>
+                            <li><Link to="/#features" className="hover:text-primary">Fonctionnalités</Link></li>
+                            <li><Link to="/download" className="hover:text-primary">Télécharger l'App</Link></li>
+                            <li><Link to="/#pricing" className="hover:text-primary">Tarifs</Link></li>
+                            <li><Link to="/#testimonials" className="hover:text-primary">Témoignages</Link></li>
+                            <li><Link to="/#faq" className="hover:text-primary">FAQ</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-semibold mb-4">Entreprise</h3>
                         <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li><a href="#about" className="hover:text-primary">À propos</a></li>
+                            <li><Link to="/#about" className="hover:text-primary">À propos</Link></li>
                             <li><a href="#" className="hover:text-primary">Carrières</a></li>
                             <li><a href="#" className="hover:text-primary">Blog</a></li>
-                            <li><a href="#contact" className="hover:text-primary">Contact</a></li>
+                            <li><Link to="/#contact" className="hover:text-primary">Contact</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-semibold mb-4">Légal</h3>
                         <ul className="space-y-2 text-sm text-muted-foreground">
                             <li>
-                                <PrivacyPolicy>
-                                    <button className="hover:text-primary cursor-pointer text-left">Confidentialité</button>
-                                </PrivacyPolicy>
+                                <Link to="/privacy" className="hover:text-primary cursor-pointer text-left">Confidentialité</Link>
                             </li>
                             <li>
-                                <TermsOfService>
-                                    <button className="hover:text-primary cursor-pointer text-left">Conditions d'utilisation</button>
-                                </TermsOfService>
+                                <Link to="/terms" className="hover:text-primary cursor-pointer text-left">Conditions d'utilisation</Link>
                             </li>
                         </ul>
                     </div>

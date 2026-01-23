@@ -7,11 +7,11 @@ import { PreorderModal } from "./PreorderModal"
 import logo from "@/assets/logo.png"
 
 const navLinks = [
-    { name: "Accueil", href: "#hero" },
-    { name: "Fonctionnalités", href: "#features" },
-    { name: "Démo", href: "#demo" },
-    { name: "Témoignages", href: "#testimonials" },
-    { name: "Partenaires", href: "#partners" },
+    { name: "Accueil", href: "/" },
+    { name: "Fonctionnalités", href: "/#features" },
+    { name: "Démo", href: "/#demo" },
+    { name: "Témoignages", href: "/#testimonials" },
+    { name: "Télécharger", href: "/download" },
 ]
 
 export function Navbar() {
@@ -39,7 +39,7 @@ export function Navbar() {
                         ))}
                         <ThemeToggle />
                         <PreorderModal>
-                            <Button>Télécharger</Button>
+                            <Button>Précommander</Button>
                         </PreorderModal>
                     </div>
 
